@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Developer Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_additions.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+
+    <div class="header-content">
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    <div class="profile-photo-header">
+        <img src="/assets/images/profile.jpeg" alt="Profile Photo" />
+      </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="text-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I build scalable and efficient web applications with modern technologies.</p>
+        <a href="#contact" class="cta-button hire-me">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p>I am a passionate full stack web developer with experience in building dynamic and responsive websites and applications. I specialize in JavaScript, PHP, and modern frameworks.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section">
+    <div class="text-content">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript (ES6+)</li>
+        <li>React.js / Vue.js</li>
+        <li>Node.js / Express</li>
+        <li>PHP / Laravel</li>
+        <li>MySQL / MongoDB</li>
+        <li>HTML5 / CSS3 / SASS</li>
+        <li>Git / GitHub</li>
+        <li>RESTful APIs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section">
+    <div class="text-content">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project-item">
+          <h3>Project One</h3>
+          <p>A web application for managing tasks with real-time collaboration features.</p>
+          <a href="#" target="_blank" class="view-project-btn">View Project</a>
+        </article>
+        <article class="project-item">
+          <h3>Project Two</h3>
+          <p>An e-commerce platform with secure payment integration and user-friendly UI.</p>
+          <a href="#" target="_blank" class="view-project-btn">View Project</a>
+        </article>
+        <article class="project-item">
+          <h3>Project Three</h3>
+          <p>A portfolio website showcasing my skills and previous work.</p>
+          <a href="#" target="_blank" class="view-project-btn">View Project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="text-content">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" class="cta-button">Send</button>
+      </form>
+      <p id="success-message" style="color: green; font-weight: bold; display: none;">Thank you for your message!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 John Doe</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Show success message on form submission
+    const contactForm = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+
+    // Remove event.preventDefault() to allow form submission
+    contactForm.addEventListener('submit', function(event) {
+      // event.preventDefault();
+      successMessage.style.display = 'block';
+      // contactForm.reset();
+    });
+  </script>
+</body>
+</html>

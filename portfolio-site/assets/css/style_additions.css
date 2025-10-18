@@ -1,0 +1,298 @@
+/* Additional high-level CSS for portfolio content */
+
+/* Section headings */
+section h2 {
+  font-size: 2rem;
+  color: #1abc9c;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+/* Profile section layout */
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+
+.profile-section .text-content {
+  flex: 1;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.4);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+  }
+}
+
+/* Header profile photo styling */
+.header-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.profile-photo-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(26, 188, 156, 0.5);
+ dele
+}
+
+.profile-photo-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Call to action button for Hire Me */
+.cta-button {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #16a085;
+  box-shadow: 0 6px 15px rgba(22, 160, 133, 0.6);
+}
+
+/* About Me paragraph */
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+/* Skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.skills-list li {
+  background-color: #e2e2e2;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #1abc9c;
+  color: white;
+  box-shadow: 0 6px 15px rgba(26, 188, 156, 0.6);
+}
+
+/* Project view button */
+.project-item .view-project-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item .view-project-btn:hover {
+  background-color: #16a085;
+  box-shadow: 0 4px 10px rgba(22, 160, 133, 0.6);
+}
+
+/* Contact form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Improved header styling */
+header {
+  background-color: #fff;
+  color: #1abc9c;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(26, 188, 156, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: #16a085;
+}
+
+/* Navigation styles */
+nav {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #16a085;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #1abc9c;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #16a085;
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #16a085;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(22, 160, 133, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 120;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 130;
+  }
+}
+
+/* Hire Me button without background */
+.cta-button.hire-me {
+  background-color: transparent;
+  color: #16a085;
+  border: 2px solid #16a085;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.cta-button.hire-me:hover {
+  background-color: #16a085;
+  color: white;
+}
