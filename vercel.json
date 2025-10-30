@@ -1,15 +1,10 @@
 {
   "version": 2,
+  "root": "portfolio-site",
   "builds": [
     {
-      "src": "portfolio-site/index.html",
+      "src": "index.html",
       "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/portfolio-site/$1"
     }
   ]
 }
