@@ -20,7 +20,7 @@ body {
 /* Hero section with background image and overlay */
 .hero-section {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+  background: #1abc9c url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
   color: #fff;
   padding: 100px 20px;
   text-align: center;
