@@ -1,0 +1,13 @@
+# Ignore PHP files and database-related files for static deployment
+*.php
+includes/
+admin/
+client/
+*.sql
+check_db.php
+contact.php
+config.sql
+contact_messages.sql
+create_contact_messages_table.sql
+create_projects_table.sql
+create_users_table.sql
